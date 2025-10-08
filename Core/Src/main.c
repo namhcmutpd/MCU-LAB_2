@@ -510,18 +510,18 @@ static void MX_GPIO_Init(void)
 int cforEx1 = 100;
 int cforLedEx1 = 50;
 int cforLedEx2 = 25;
-int cforLedEx4 = 100;
+int cforLedEx4 = 25;
 int seg_index = 0;
 int indexforEx3 = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	//timer_run();
 
 	//EX1
-	/*cforEx1--;
+	cforEx1--;
 	if(cforEx1 <= 0) {
 		cforEx1 = 100;
 		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	}*/
+	}
 	/*
 	cforLedEx1--;
 	if(cforLedEx1 <= 0){
@@ -577,15 +577,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	}*/
 
 	//EX4
-	/*cforLedEx4--;
+	cforLedEx4--;
 	if(cforLedEx4 <= 0){
-		cforLedEx4 = 100;
+		cforLedEx4 = 25;
 		update7SEG(indexforEx3);
 		indexforEx3++;
 		if(indexforEx3 >= 4){
 			indexforEx3 = 0;
 		}
-	}*/
+	}
 }
 /* USER CODE END 4 */
 
