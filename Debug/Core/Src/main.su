@@ -1,0 +1,14 @@
+main.c:77:6:setTimer	16	static
+main.c:84:6:timer_run	16	static
+main.c:91:6:updateClockBuffer	4	static
+main.c:97:6:clearAllLeds	8	static
+main.c:103:6:update7SEG	16	static
+main.c:124:6:display7SEG	16	static
+main.c:218:6:updateLEDMatrix	24	static
+main.c:268:6:LEDMatrix_run	24	static
+main.c:284:5:main	8	static
+main.c:380:6:SystemClock_Config	72	static
+main.c:416:13:MX_TIM2_Init	32	static
+main.c:461:13:MX_GPIO_Init	32	static
+main.c:510:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:519:6:Error_Handler	4	static,ignoring_inline_asm
