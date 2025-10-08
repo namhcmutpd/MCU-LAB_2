@@ -517,11 +517,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	//timer_run();
 
 	//EX1
-	/*cforEx1--;
+	cforEx1--;
 	if(cforEx1 <= 0) {
 		cforEx1 = 100;
 		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	}*/
+	}
 	/*
 	cforLedEx1--;
 	if(cforLedEx1 <= 0){
@@ -566,7 +566,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		}
 	}*/
 	//EX3
-	/*cforLedEx2--;
+	cforLedEx2--;
 	if(cforLedEx2 <= 0){
 		cforLedEx2 = 100;
 		update7SEG(indexforEx3);
@@ -574,7 +574,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		if(indexforEx3 >= 4){
 			indexforEx3 = 0;
 		}
-	}*/
+	}
 
 	//EX4
 	/*cforLedEx4--;
