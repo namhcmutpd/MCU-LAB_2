@@ -321,7 +321,7 @@ int main(void)
   while (1)
   {
 	  //Nhap nhay den de kiem tra he thong
-	  /*if(timer_flag[0]){
+	  if(timer_flag[0]){
 		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 		  setTimer(0, 1000);
 	  }
@@ -356,7 +356,7 @@ int main(void)
 	  }
 
 	  //Led_matrix
-	  if(timer_flag[3]){
+	  /*if(timer_flag[3]){
 		  updateLEDMatrix(index_led_matrix);
 		  index_led_matrix++;
 		  if(index_led_matrix >= MAX_LED_MATRIX){
@@ -514,7 +514,7 @@ int cforLedEx4 = 100;
 int seg_index = 0;
 int indexforEx3 = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	//timer_run();
+	timer_run();
 
 	//EX1
 	/*cforEx1--;
