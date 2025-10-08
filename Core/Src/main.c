@@ -88,6 +88,7 @@ void timer_run(){
 		timer_flag[i] |= (timer_counter[i] == 0 && running);
 	}
 }
+//UpdateClockBuffer Here
 void updateClockBuffer(){
 	led_buffer[0] = hour / 10;
 	led_buffer[1] = hour % 10;
